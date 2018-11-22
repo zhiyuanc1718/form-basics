@@ -12,25 +12,32 @@
 
 <body>
     <div class="container">
-        <h1>Form Basics</h1>
+        <h1>Tutor Form</h1>
         <hr>
         <form action="http://www.w3schools.com/action_page.php" method="get">
 
-            Name:
-            <input type="text" name="name"><br> E-mail:
-            <input type="email" name="email"><br>
-
-            <!--add your own inputs below-->
-
-
-
-
-
-
-
-
-            <!--add your own inputs above-->
-
+            Name: <input type="text" name="name" required><br>
+            Nickname: <input type="text" name="nickname"><br>
+            E-mail:<input type="email" name="email" required><br>
+            Need help with: &nbsp
+            <input type="radio" name="help_status" value="homework">&nbsp my homework &nbsp
+            <input type="radio" name="help_status" value="classwork">&nbsp my classwork &nbsp
+            <input type="radio" name="help_status" value="exam">&nbsp my upcoming exam &nbsp
+            <input type="radio" name="help_status" value="none">&nbsp I am all fine
+            <br>
+            Favorite subject in school: &nbsp
+            <select name="subject" required>
+                <option value="math" selected> math </option>
+                <option value="science" selected> science </option>
+                <option value="english" selected> english </option>
+                <option value="history" selected> history </option>
+                <option value="humanities" selected> humanities </option>
+                <option value="none" selected> none </option>
+            </select>
+            <br>
+            Your Message: <br>
+            <textarea name="message" placeholder="leave a message and I will be right back to solve your issue"></textarea>
+            <br>
             <input class="blue-button" type="submit" value="Submit">
         </form>
     </div>
